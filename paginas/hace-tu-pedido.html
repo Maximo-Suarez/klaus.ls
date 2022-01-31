@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS -->
         <link rel="stylesheet" href="../style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- FONT FAMILY -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,7 +74,7 @@
             <div class="htp__celular">
                 <img class="celular__img" src="../imagenes/Celular.png" alt="instagram visto desde un celular">
             </div>
-            <section class="htp__lugares">
+            <section class="htp__lugares" data-aos="fade-right">
                 <h2 class="subtitulo2 lugares__subtitulo">Lugares de entrega</h2>
                 <p class="lugares__texto">Envios por todo el país por medio de Correo Argentino. En Córdoba Capital a domicilio dentro del anillo circunvalación. ¡Contactanos para averiguar más!</p>
             </section>
@@ -86,5 +87,10 @@
             </div>
             <a class="footer__icon" href="http://instagram.com/klaus.ls/"><i class="fab fa-instagram"></i></a>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

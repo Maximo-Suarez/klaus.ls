@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS -->
         <link rel="stylesheet" href="../style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- FONT FAMILY -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +40,7 @@
             <!-- opciones de contacto -->
             <section class="contactanos__opciones">
                 <!-- instagram -->
-                <div class="opciones__instagram">
+                <div class="opciones__instagram" data-aos="fade-up">
                     <h3 class="subtitulo3 instagram__subtitulo">Contactanos por </h3>
                     <a class="instagram__link" href="http://instagram.com/klaus.ls/">instagram</a>
                 </div>
@@ -64,5 +65,11 @@
             </div>
             <a class="footer__icon" href="http://instagram.com/klaus.ls/"><i class="fab fa-instagram"></i></a>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
     </body>
 </html>
