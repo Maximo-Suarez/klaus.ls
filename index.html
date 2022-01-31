@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS -->
         <link rel="stylesheet" href="./style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- FONT FAMILY -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +35,11 @@
                 <h1 class="background__titulo">Lo mejor en moda, diseño y confección</h1>
                 <img class="background__logo" src="./imagenes/logo-blanco-removebg-preview.png" alt="logo de klaus">
             </section>
-            <section class="inicio__bienvenidos">
+            <section class="inicio__introduccion">
+            <h2 class="subtitulo2 introduccion__subtitulo">¡Hola!</h2>
+                <p class="introduccion__texto">Somos una empresa que se dedica a convertir tus ideas en prendas hechas a medida, además, comercilizamos indumentaria exclusiva!</p>
+            </section>
+            <section class="inicio__bienvenidos" data-aos="fade-right">
                 <h2 class="subtitulo2 bienvenidos__subtitulo">¡Bienvenidos al sitio web de Klaus!</h2>
                 <p class="bienvenidos__texto">En este sitio web podrás ver lo nuevo de Klaus.ls y algunos de sus productos, recuerda ir a la sección <a href="./paginas/novedades.html">"Novedades"</a> y a <a href="./paginas/productos.html">"Productos"</a> para ello.</p>
             </section>
@@ -47,7 +52,10 @@
             </div>
             <a class="footer__icon" href="http://instagram.com/klaus.ls/"><i class="fab fa-instagram"></i></a>
         </footer>
-        <h6>holaaaaaaaaa</h6>
-        <h6>probando</h6>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
