@@ -2,6 +2,36 @@
     font-family: 'Poppins', sans-serif;
     color: #05f;
 }
-.header__nav{
+.bg-klaus{
     background-color: #05f;
+}
+
+/* .bg-img-klaus{
+    
+}
+ */
+.blanco{
+    color: #fff !important;
+}
+
+
+
+.logo-chico-nav{
+    height: 3rem;
+    width: 6.8rem;
+}
+
+.nav__boton{
+    right: 1rem;
+}
+
+.header{
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    margin-top: -4rem;
+}
+
+.main{
+    margin-top: 4rem;
 }

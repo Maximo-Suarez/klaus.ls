@@ -20,42 +20,43 @@
         <title>Klaus</title>
     </head>
     <body>
-        <!--________________________________ navbar ______________________________-->
-<!--         <header class="header">
-            <nav class="header__nav">
-                <i class="nav__barras fas fa-bars"></i>
-                <img class="nav__logo" src="./imagenes/logo-blanco-removebg-preview.png" alt="logo de klaus">
-                <ul class="nav__links">
-                    <li class="links__inicio"><a href="#">Inicio</a></li>
-                    <li class="links__novedades"><a href="./paginas/novedades.html">Novedades</a></li>
-                    <li class="links__productos"><a href="./paginas/productos.html">Productos</a></li>
-                    <li class="links__htp"><a href="./paginas/hace-tu-pedido.html">Hacé tu pedido</a></li>
-                    <li class="links__contacto"><a href="./paginas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>-->        
-        
-        <header >
-            <div class="collapse header__nav" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <h5 class="text-white h4">Collapsed content</h5>
-                    <span class="text-muted">Toggleable via the navbar brand.</span>
-                </div>
-            </div>
-            <nav class="navbar navbar-dark header__nav">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <img class="nav__logo" src="./imagenes/logo-blanco-removebg-preview.png" alt="Logo de klaus.ls">
-                </div>
-            </nav>
+        <!--________________________________ header ______________________________-->
+        <header class="header">
+                <nav class="navbar navbar-expand-lg navbar-light bg-klaus">
+                    <div class="container">
+                        <div class=" position-relative m-auto">
+                            <a class="navbar-brand" href="#"> <img class="logo-chico-nav" src="./imagenes/logo-blanco-removebg-preview.png" alt="Logo de Klaus.ls"></a>
+                        </div>
+                        <button class="navbar-toggler position-absolute nav__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav w-100 justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" aria-current="page" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/novedades.html">Novedades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/hace-tu-pedido.html">Hace tu pedido</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
         </header>
-        
-        <main class="inicio">
+        <!--________________________________ main ______________________________-->
+        <main class="main inicio">
             <section class="inicio__background">
                 <h1 class="background__titulo">Lo mejor en moda, diseño y confección</h1>
-                <img class="background__logo" src="./imagenes/logo-blanco-removebg-preview.png" alt="logo de klaus">
+                <img class="background__logo logo-chico-nav" src="./imagenes/logo-blanco-removebg-preview.png" alt="logo de klaus">
             </section>
             <section class="inicio__introduccion">
             <h2 class="subtitulo2 introduccion__subtitulo">¡Hola!</h2>
