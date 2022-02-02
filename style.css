@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
     color: #05f;
+    font-weight: 700 ;
 }
 /* colores */
 .bg-klaus{
@@ -12,14 +13,38 @@
 .blanco{
     color: #fff !important;
 }
+/* ----------- */
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 4rem auto 9rem;
+}
 
-/* __________________________________________HEADER__________________________________________ */
+.inicio, .novedades, .productos, .htp, .contactanos{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 2rem;
+    padding: 0 1rem;
+    border: #05f solid 1px;
+    margin: 2rem 0 1rem 0 ;
+}
+/* __________________________________________Header con bootstrap__________________________________________ */
 
 .header{
     position: fixed;
     width: 100vw;
     z-index: 1000;
-    margin-top: -4rem;
 }
 
 .logo-chico{
@@ -31,13 +56,754 @@
     right: 1rem;
 }
 
-/* __________________________________________MAIN__________________________________________ */
+/* ____________________________________________________________________________________ */
+/* --------------------------------------------------------- */
+/* inicio main */
+/* inicio index */
 
-.main{
-    margin-top: 4rem;
+
+.inicio__background{
+    width: 100vw;
+    background: rgb(3,57,164);
+    background-image: linear-gradient(90deg, rgba(3,57,164,1) 0%, rgba(0,85,255,1) 35%, rgba(0,203,215,1) 100%);
+    box-shadow: .2rem .2rem 1rem #05f;
 }
 
-.logo-mediano{
+.background__titulo{
+    font-size: 2.1rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+.background__logo{
+    padding: 1rem;
     height: 4rem;
-    width: 9rem;
+    width: 8rem;
+
 }
+/* -------- */
+.inicio__introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+.introduccion__saludo{
+    font-size: 1.2rem;
+}
+.introduccion__texto{
+    text-align: end;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    border-right: .1rem solid #05f;
+}
+/* -------- */
+.inicio__bienvenidos{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bienvenidos__subtitulo{
+    font-size: 1.1rem;
+}
+
+.bienvenidos__texto{
+    margin: 0 1rem ;
+    padding: 0 1rem;
+    border-left: solid 1px #05f;
+}
+
+@media only screen and (min-width: 768px){
+    .inicio__background{
+        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .background__logo{
+        height: 5rem;
+        width: 10rem;
+    }
+    .background__titulo{
+        font-size: 2.5rem;
+    }
+    /* ----- */
+    .introduccion__saludo{
+        font-size: 1.5rem;
+    }
+    .introduccion__texto{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+    
+    /* ----- */
+    .inicio__bienvenidos{
+        width: 90vw;
+        flex-direction: row;
+    }
+    .bienvenidos__subtitulo{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .bienvenidos__texto{
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+}
+/* fin index */
+/* --------------------------------------------------------- */
+/* inicio novedades */
+/* padre */
+.novedades{
+    height: 60rem;
+}
+/* 1er hijo */
+.novedades__titulo{
+    font-size: 3rem;
+}
+
+/* 2do hijo */
+.novedades__carrusel{
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
+    box-shadow: .1rem .1rem .6rem #063dac;
+    margin-top: 1rem;
+    height: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.novedades__carrusel>i{
+    display: none;
+}
+
+
+.carrusel__img{
+    width: 80%;
+    height: fit-content;
+    object-fit: cover;
+    box-shadow: .1rem .1rem .7rem #063dac;
+    border-radius: .3rem;
+}
+
+.carrusel__info{
+    width: 80%;
+    height: 28%;
+    border-left: solid #fff 1px;
+    padding: .2rem 0 .2rem .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info__subtitulo, .info__caracteristicas, .info__precio{
+    color: #fff;
+}
+
+.info__subtitulo{
+    font-size: 1.1rem;
+}
+.info__caracteristicas{
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.info__precio{
+    text-align: end;
+}
+
+/* 3er hijo */
+
+.novedades__texto{
+    width: 17rem;
+    text-align: end;
+    padding: .2rem .8rem .2rem 0;
+    margin-right: 1rem;
+    border-right: solid #05f 1px;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.texto__subtitulo{
+    font-size: 1.5rem;
+}
+
+.texto__nov{
+    font-size: 1.2rem;
+
+}
+
+.novedades__texto>i{
+    font-size: 1.9rem;
+    transform: translate(100%,-50%);
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px){
+    .novedades{
+        height: 50rem;
+    }
+    /* 2do hijo */
+    .novedades__carrusel i{
+        display: flex;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .novedades__carrusel{
+        height: 28rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .carrusel__img{
+        width: 50%;
+        height: 90%;
+        object-fit: fill;
+    }
+    .carrusel__info{
+        width: 30%;
+        height: 70%;
+        border: solid #fff .1rem;
+        box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    /* 1er hijo */
+    .novedades__titulo{
+        width: 50%;
+        text-align: center;
+        border: .1rem #05f solid;
+    }
+    /* 3er hijo */
+    .novedades__texto{
+        width: 80%;
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+}
+
+
+/* fin novedades */
+/* --------------------------------------------------------- */
+/* inicio productos */
+/* mobile */
+/* padre */
+.productos{
+    height: 60rem;
+    overflow-x: hidden;
+}
+/* 1er hijo */
+.productos__titulo{
+    font-size: 3rem;
+}
+/* 2do hijo*/
+.productos__categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40rem;
+}
+.categorias__contenedor{
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.productos__categorias div[class$="__galeria"]{
+    display: none;
+}
+
+
+div[class^="categoria__"]{
+    height: 5rem;
+    width: 15rem;
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class^="categoria__"] .subtitulo3{
+    color: #fff;
+}
+
+/* 3er hijo*/
+.productos__aclaracion{
+    padding: 0 1rem ;
+    margin: 0 3rem;
+    margin-bottom: 1rem;
+    border-left: #05f solid .1rem;
+    border-right: #05f solid .1rem;
+    border-bottom: #05f solid .1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos__aclaracion i:first-of-type{
+    transform: translate(-115%,-40%);
+    font-size: 1.9rem;
+    align-self: flex-start;
+    position: absolute;
+
+}
+
+.productos__aclaracion i:nth-of-type(2){
+    transform: translate(115%,-40%);
+    font-size: 1.9rem;
+    align-self: flex-end;
+    position: absolute;
+}
+
+.aclaracion__texto{
+    margin: .3rem 0 1rem 0;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    /* padre */
+    .productos{
+        height: 45rem;
+    }
+    /* 1er hijo */
+    .productos__titulo{
+        width: 50%;
+        text-align: center;
+        border: .1rem #05f solid;
+    }
+    /* 2do hijo */
+    .productos__categorias{
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+    }
+    .categorias__subtitulo{
+        margin-bottom: 1rem;
+    }
+    .categorias__contenedor{
+        height: 21rem;
+        display: grid;
+        grid-template-areas: 
+        "columna1 columna2 columna3"
+        "columna1 columna2 columna3"
+        ;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    div[class^="categoria__"]{
+    height: 8rem;
+    width: 11rem;
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+/* Desktop */
+@media only screen and (min-width: 988px){
+    .categorias__contenedor{
+        column-gap: 2rem;
+    }
+    div[class^="categoria__"]{
+        height: 10rem;
+        width: 15rem;
+    }
+}
+
+/* fin productos */
+/* --------------------------------------------------------- */
+/* inicio htp */
+/* mobile */
+/* padre */
+.htp{
+    height: 65rem;
+}
+/* 1er hijo */
+.htp__titulo{
+    font-size: 3rem;
+}
+/* 2do hijo */
+.htp__SeguiLosPasos{
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
+    box-shadow: .1rem .1rem .6rem #063dac;
+    height: 35rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.SeguiLosPasos__subtitulo{
+    text-align: center;
+    border: solid .1rem #fff;
+    box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
+    padding: 0 1rem;
+}
+
+.SeguiLosPasos__texto{
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border: solid .1rem #fff;
+    box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
+
+}
+
+.contenedor__pasos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.paso__1, .paso__2, .paso__3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.paso__1 p, .paso__2 p, .paso__3 p{
+    text-align: center;
+}
+
+.htp__SeguiLosPasos *{
+    color: #fff;
+}
+
+/* 3er hijo */
+.htp__lugares{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lugares__subtitulo{
+    font-size: 2rem;
+    border: .1rem solid #05f;
+    padding: 0 1rem;
+}
+
+.lugares__texto{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    border-left: solid .1rem #05f;
+}
+/* 4to hijo */
+.htp__celular{
+    display: none;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    /* padre */
+    .htp{
+        margin: 1rem;
+        height: auto;
+        display: grid;
+        grid-template-areas: 
+        "titulo  titulo  titulo"
+        "pasos   pasos   celular"
+        ".       lugares lugares"
+        ;
+        grid-template-rows: 5rem auto auto;
+        grid-template-columns: 1fr 1fr 200px;
+        row-gap: 4rem;
+        column-gap: 3rem;
+    }
+    /* 1er hijo */
+    .htp__titulo{
+        grid-area: titulo;
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+    /* 2do hijo */
+    .htp__SeguiLosPasos{
+        grid-area: pasos;
+        align-items:  center;
+    }
+    .htp__SeguiLosPasos *{
+        font-size: 1.2rem; 
+    }
+    .SeguiLosPasos__subtitulo{
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+    .paso__1, .paso__2, .paso__3{
+        display: flex;
+        flex-direction: row;
+    }
+    .contenedor__pasos p{
+        text-align: start;
+        padding: 0 0 0 1rem;
+        margin-left: 1rem;
+        border-left: solid #fff .1rem;
+    }
+    
+    /* 3er hijo */
+    .htp__lugares{
+        grid-area: lugares;
+        height: 20rem;
+        border: solid .1rem #05f;
+    }
+    .lugares__texto{
+        border-left: none;
+        border-right: .1rem solid #05f;
+        text-align: end;
+    }
+    /* 4to hijo */
+    .htp__celular{
+        display: flex;
+        grid-area: celular;
+        justify-content: center;
+        align-content: center;
+    }
+    .celular__img{
+        width: 216px;
+        height: 384px;
+    }
+}
+
+/* Laptop*/
+@media only screen and (min-width: 988px){
+    .htp{
+        grid-template-columns: 1fr 1fr 300px;
+    }
+    .celular__img{
+        width: 270px;
+        height: 480px;
+    }
+}
+/* Desktop */
+@media only screen and (min-width: 1040px){
+    .htp{
+        grid-template-columns: 1fr 1fr 500px;
+    }
+    .celular__img{
+        width: 360px;
+        height: 640px;
+    }
+}
+
+/* fin hace tu pedido */
+/* --------------------------------------------------------- */
+/* inicio contacto */
+/* mobile */
+/* padre */
+.contactanos{
+    height: 57rem;
+    overflow-x: hidden;
+}
+/* 1er hijo */
+.contactanos__titulo{
+    width: 15rem;
+    text-align: center;
+    border: 0.1rem #05f solid;
+}
+/* 2do hijo */
+.contactanos__aclaracion{
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
+    box-shadow: .1rem .1rem .7rem #063dac;
+}
+
+.aclaracion__subtitulo{
+    width: 50%;
+    color: #fff;
+    box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
+    border: solid .1rem #fff;
+    text-align: center;
+}
+
+.aclaracion__texto2{
+    color: #fff;
+    border-left: solid .1rem #fff;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+
+/* 3er hijo */
+.contactanos__opciones{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opciones__instagram{
+    border: solid #05f .1rem;
+    padding: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    width: 18rem;
+}
+
+.instagram__link{
+    margin-left: .5rem;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    width: 6rem;
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 130, 204) 100%);
+    border-radius: .3rem;
+}
+
+.instagram__link:hover{
+    color: #03d7e2;
+}
+/* --- */
+.opciones__form{
+    width: 20rem;
+}
+.form__subtitulo{
+    text-align: center;
+}
+.form__formulario{
+    border: solid .1rem #063dac;
+    background-color: #063dac;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form__formulario input:nth-last-of-type(1), .form__formulario input:nth-last-of-type(2){
+    align-self: flex-end;
+    width: 6rem;
+    height: 2rem;
+    background: #fff;
+    border: .1rem #05f solid;
+    margin: 0 1rem;
+}
+
+
+.form__formulario input:nth-last-of-type(1){
+    color: #fff;
+    background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 130, 204) 100%);
+    box-shadow: .1rem .1rem .7rem rgba(255, 255, 255, 0.363);
+    border: #fff solid .1rem;
+}
+
+.form__formulario input:nth-last-of-type(1):hover{
+    box-shadow: .1rem .1rem .7rem #03d7e2;
+    border: #03d7e2 solid .1rem;
+}
+
+.form__formulario input:focus, textarea:focus{
+    outline: none;
+    box-shadow: .1rem .1rem .7rem #03d7e2;
+    border: #03d7e2 solid .1rem;
+}
+
+.form__formulario input:hover, textarea:hover{
+    outline: none;
+    box-shadow: .1rem .1rem .7rem #03d7e2;
+    border: #03d7e2 solid .1rem;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    /* padre */
+    .contactanos{
+        overflow-x: hidden;
+    }
+    /* 1er hijo */
+    .contactanos__titulo{
+        width: 50%;
+    }
+    /* 2do hijo */
+    .contactanos__aclaracion{
+        align-items: flex-start;
+        padding-left: 2rem;
+        width: 100vw;
+    }
+    .aclaracion__subtitulo{
+        margin-left: 1rem;
+        width: 40vw;
+    }
+    .aclaracion__texto2{
+        padding-left: 1rem;
+        margin-left: 1rem;
+        width: 40vw;
+    }
+    /* 3er hijo */
+    .contactanos__opciones{
+        width: 100vw;
+    }
+    .opciones__form{
+        width: 100vw;
+        align-self: flex-start;
+    }
+}
+
+
+/* fin contacto */
+/* fin main */
+/* --------------------------------------------------------- */
+/* inicio footer */
+.footer{
+    grid-area: footer;
+    background-color: #05f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__subtitulo{
+    font-size: 1.2rem;
+    margin: .5rem 0;
+    padding: .5rem 0;
+    border-bottom: solid 1px #fff;
+    color: #fff;
+}
+
+.footer__seguinos{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.seguinos__subtitulo{
+    color: #fff;
+    display: inline;
+}
+
+.seguinos__instagram{
+    color: #03d7e2;
+    text-decoration: none;
+    margin-left: .3rem;
+}
+
+.footer__icon i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+/* fin footer */
