@@ -2,28 +2,18 @@
     font-family: 'Poppins', sans-serif;
     color: #05f;
 }
+/* colores */
 .bg-klaus{
     background-color: #05f;
 }
-
-/* .bg-img-klaus{
-    
+.bg-img-klaus{
+    background-image: linear-gradient(90deg, rgba(3,57,164,1) 0%, rgba(0,85,255,1) 35%, rgba(0,203,215,1) 100%);
 }
- */
 .blanco{
     color: #fff !important;
 }
 
-
-
-.logo-chico-nav{
-    height: 3rem;
-    width: 6.8rem;
-}
-
-.nav__boton{
-    right: 1rem;
-}
+/* __________________________________________HEADER__________________________________________ */
 
 .header{
     position: fixed;
@@ -32,6 +22,22 @@
     margin-top: -4rem;
 }
 
+.logo-chico{
+    height: 3rem;
+    width: 6.8rem;
+}
+
+.nav__boton{
+    right: 1rem;
+}
+
+/* __________________________________________MAIN__________________________________________ */
+
 .main{
     margin-top: 4rem;
+}
+
+.logo-mediano{
+    height: 4rem;
+    width: 9rem;
 }

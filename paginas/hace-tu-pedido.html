@@ -20,18 +20,37 @@
         <title>Hacé tu pedido</title>
     </head>
     <body>
+                <!--________________________________ header ______________________________-->
         <header class="header">
-            <nav class="header__nav">
-                <i class="nav__barras fas fa-bars"></i>
-                <img class="nav__logo" src="../imagenes/logo-blanco-removebg-preview.png" alt="logo de klaus">
-                <ul class="nav__links">
-                    <li class="links__inicio"><a href="../index.html">Inicio</a></li>
-                    <li class="links__novedades"><a href="./novedades.html">Novedades</a></li>
-                    <li class="links__productos"><a href="./productos.html">Productos</a></li>
-                    <li class="links__htp"><a href="#">Hacé tu pedido</a></li>
-                    <li class="links__contacto"><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                <nav class="navbar navbar-expand-lg navbar-light bg-klaus">
+                    <div class="container">
+                        <div class=" position-relative m-auto">
+                            <a class="navbar-brand" href="#"> <img class="logo-chico" src="./imagenes/logo-blanco-removebg-preview.png" alt="Logo de Klaus.ls"></a>
+                        </div>
+                        <button class="navbar-toggler position-absolute nav__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav w-100 justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/novedades.html">Novedades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/productos.html">Productos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/hace-tu-pedido.html">Hace tu pedido</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active blanco" href="./paginas/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
         </header>
         <main class="htp">
             <h1 class="titulo htp__titulo">Pedidos</h1>
