@@ -438,7 +438,7 @@ div[class^="categoria__"] .subtitulo3{
 .htp__SeguiLosPasos{
     background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
     box-shadow: .1rem .1rem .6rem #063dac;
-    height: 35rem;
+    height: 45rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -658,8 +658,7 @@ div[class^="categoria__"] .subtitulo3{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    width: 18rem;
+    width: 25rem;
 }
 
 .instagram__link{
