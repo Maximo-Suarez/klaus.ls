@@ -1,7 +1,15 @@
 *{
     font-family: 'Poppins', sans-serif;
     color: #05f;
-    font-weight: 700 ;
+}
+@media only screen and (min-width: 992px){
+    p{
+        font-size: 25px !important;
+    }
+}
+
+.subtitulo2{
+    font-weight: 700;
 }
 /* colores */
 .bg-klaus{
@@ -64,22 +72,30 @@ body{
 
 .inicio__background{
     width: 100vw;
-    background: rgb(3,57,164);
+    height: 50vh;
+    background-color: rgb(3,57,164);
     background-image: linear-gradient(90deg, rgba(3,57,164,1) 0%, rgba(0,85,255,1) 35%, rgba(0,203,215,1) 100%);
-    box-shadow: .2rem .2rem 1rem #05f;
+    box-shadow: .2rem .2rem 1.5rem rgb(85, 114, 172);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .background__titulo{
+    width: 100%;
     font-size: 2.1rem;
     padding: 1rem;
     color: #fff;
 }
 
 .background__logo{
-    padding: 1rem;
-    height: 4rem;
-    width: 8rem;
+    height: 3rem;
+    width: 6.8rem;
+    margin: 1rem;
+}
 
+.logo__img{
+    width: 100%;
 }
 /* -------- */
 .inicio__introduccion{
@@ -88,14 +104,27 @@ body{
     align-items: center;
     margin-top: 2rem;
 }
-.introduccion__saludo{
+.introduccion__subtitulo{
+    grid-area: hola;
     font-size: 1.2rem;
+    text-align: center;
 }
 .introduccion__texto{
+    grid-area: texto;
     text-align: end;
     padding-right: 1rem;
     margin-right: 1rem;
     border-right: .1rem solid #05f;
+}
+
+.introduccion__icono{
+    grid-area: icono;
+    width: 10rem;
+    height: 10rem;
+}
+
+.icono__img{
+    width: 100%;
 }
 /* -------- */
 .inicio__bienvenidos{
@@ -125,18 +154,34 @@ body{
     }
     .background__logo{
         height: 5rem;
-        width: 10rem;
+        width: 10.8rem;
+    }
+    .logo__img{
+        width: 100%;
     }
     .background__titulo{
         font-size: 2.5rem;
     }
     /* ----- */
-    .introduccion__saludo{
-        font-size: 1.5rem;
+    .inicio__introduccion{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "hola hola"
+        "icono texto"
+        "icono texto"
+        ;
+        grid-template-columns: 12rem auto;
+    }
+    .introduccion__subtitulo{
+        font-size: 2rem;
     }
     .introduccion__texto{
         font-size: 1.2rem;
         margin-right: 2rem;
+    }
+    .introduccion__icono{
+        margin: 0 2rem;
     }
     
     /* ----- */
@@ -806,3 +851,4 @@ div[class^="categoria__"] .subtitulo3{
     font-size: 1.5rem;
 }
 /* fin footer */
+
