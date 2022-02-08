@@ -202,9 +202,7 @@ body{
 /* --------------------------------------------------------- */
 /* inicio novedades */
 /* padre */
-.novedades{
-    height: 60rem;
-}
+
 /* 1er hijo */
 .novedades__titulo{
     font-size: 3rem;
@@ -213,54 +211,13 @@ body{
 /* 2do hijo */
 .novedades__carrusel{
     background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
-    box-shadow: .1rem .1rem .6rem #063dac;
+    box-shadow: .2rem .2rem 1.5rem rgb(85, 114, 172);
     margin-top: 1rem;
     height: 37.5rem;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-
 }
 
-.novedades__carrusel>i{
-    display: none;
-}
-
-
-.carrusel__img{
-    width: 80%;
-    height: fit-content;
-    object-fit: cover;
-    box-shadow: .1rem .1rem .7rem #063dac;
-    border-radius: .3rem;
-}
-
-.carrusel__info{
-    width: 80%;
-    height: 28%;
-    border-left: solid #fff 1px;
-    padding: .2rem 0 .2rem .8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.info__subtitulo, .info__caracteristicas, .info__precio{
-    color: #fff;
-}
-
-.info__subtitulo{
-    font-size: 1.1rem;
-}
-.info__caracteristicas{
-    font-size: .9rem;
-    font-weight: 400;
-}
-
-.info__precio{
-    text-align: end;
-}
 
 /* 3er hijo */
 
@@ -281,7 +238,6 @@ body{
 
 .texto__nov{
     font-size: 1.2rem;
-
 }
 
 .novedades__texto>i{
@@ -295,31 +251,18 @@ body{
         height: 50rem;
     }
     /* 2do hijo */
-    .novedades__carrusel i{
-        display: flex;
-        color: #fff;
-        font-size: 1.5rem;
-    }
     .novedades__carrusel{
-        height: 28rem;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        width: 100% !important;
+    }
+    .carrusel__bootstrap{
+        width: 75% !important;
+        height: 80% !important;
+        margin: auto;
+        box-shadow: .2rem .2rem 1.5rem rgb(47, 53, 65);
     }
     .carrusel__img{
-        width: 50%;
-        height: 90%;
-        object-fit: fill;
-    }
-    .carrusel__info{
-        width: 30%;
-        height: 70%;
-        border: solid #fff .1rem;
-        box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: center;
+        height: 26rem;
+        width: 25rem;
     }
     /* 1er hijo */
     .novedades__titulo{
@@ -331,7 +274,7 @@ body{
     .novedades__texto{
         width: 80%;
         margin-bottom: 2rem;
-        margin-top: 0;
+        margin-top: 1rem;
     }
 }
 
@@ -496,6 +439,7 @@ div[class^="categoria__"] .subtitulo3{
     border: solid .1rem #fff;
     box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
     padding: 0 1rem;
+    width: 90%;
 }
 
 .SeguiLosPasos__texto{
@@ -512,6 +456,7 @@ div[class^="categoria__"] .subtitulo3{
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    padding-left: 0;
 }
 
 .paso__1, .paso__2, .paso__3{
@@ -590,6 +535,7 @@ div[class^="categoria__"] .subtitulo3{
     .SeguiLosPasos__subtitulo{
         margin: 0 1rem;
         font-size: 1.5rem;
+        width: auto;
     }
     .paso__1, .paso__2, .paso__3{
         display: flex;
@@ -670,7 +616,8 @@ div[class^="categoria__"] .subtitulo3{
     justify-content: space-evenly;
     align-items: center;
     background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
-    box-shadow: .1rem .1rem .7rem #063dac;
+    box-shadow: .2rem .2rem 1.5rem rgb(118, 129, 153);
+
 }
 
 .aclaracion__subtitulo{
@@ -693,8 +640,7 @@ div[class^="categoria__"] .subtitulo3{
     height: 30rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .opciones__instagram{
@@ -704,6 +650,7 @@ div[class^="categoria__"] .subtitulo3{
     justify-content: center;
     align-items: center;
     width: 25rem;
+    align-self: center;
 }
 
 .instagram__link{
@@ -721,60 +668,49 @@ div[class^="categoria__"] .subtitulo3{
 }
 /* --- */
 .opciones__form{
-    width: 20rem;
+    border: solid .1rem #babcc0;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem 1.5rem rgb(118, 129, 153);
 }
 .form__subtitulo{
     text-align: center;
 }
-.form__formulario{
-    border: solid .1rem #063dac;
-    background-color: #063dac;
-    height: 23rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 .form__formulario input:nth-last-of-type(1), .form__formulario input:nth-last-of-type(2){
-    align-self: flex-end;
-    width: 6rem;
-    height: 2rem;
     background: #fff;
     border: .1rem #05f solid;
-    margin: 0 1rem;
+    border-radius: .2rem;
+    padding: .2rem 1rem;
 }
-
 
 .form__formulario input:nth-last-of-type(1){
     color: #fff;
     background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 130, 204) 100%);
-    box-shadow: .1rem .1rem .7rem rgba(255, 255, 255, 0.363);
+    box-shadow: .1rem .1rem 1rem rgba(255, 255, 255, 0.363);
     border: #fff solid .1rem;
 }
 
 .form__formulario input:nth-last-of-type(1):hover{
-    box-shadow: .1rem .1rem .7rem #03d7e2;
-    border: #03d7e2 solid .1rem;
+    box-shadow: .1rem .1rem 1rem #063dac;
+    border: #063dac solid .1rem;
 }
 
-.form__formulario input:focus, textarea:focus{
+.form__formulario input:focus{
     outline: none;
-    box-shadow: .1rem .1rem .7rem #03d7e2;
-    border: #03d7e2 solid .1rem;
+    border: #063dac solid .1rem;
 }
 
-.form__formulario input:hover, textarea:hover{
+.form__formulario input:hover{
     outline: none;
-    box-shadow: .1rem .1rem .7rem #03d7e2;
-    border: #03d7e2 solid .1rem;
+    border: #063dac solid .1rem;
 }
+
 
 /* Tablet */
 @media only screen and (min-width: 768px){
     /* padre */
     .contactanos{
-        overflow-x: hidden;
+        height: 55rem;
     }
     /* 1er hijo */
     .contactanos__titulo{
@@ -796,15 +732,28 @@ div[class^="categoria__"] .subtitulo3{
         width: 40vw;
     }
     /* 3er hijo */
-    .contactanos__opciones{
-        width: 100vw;
+    .opciones__instagram{
+        width: 50vw;
     }
-    .opciones__form{
-        width: 100vw;
-        align-self: flex-start;
+    .form__subtitulo{
+        text-align: start;
+        margin: 1rem;
+    }    
+    .form__formulario input:nth-last-of-type(1), .form__formulario input:nth-last-of-type(2){
+        width: fit-content !important;
+        margin-right: 1rem;
     }
+
 }
 
+@media only screen and (min-width: 992px){
+    .contactanos{
+        height: 60rem;
+    }
+    .contactanos__aclaracion{
+        height: 18rem;
+    }
+}
 
 /* fin contacto */
 /* fin main */
