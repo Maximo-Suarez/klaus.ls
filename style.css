@@ -670,7 +670,7 @@ div[class^="categoria__"] .subtitulo3{
 .opciones__form{
     border: solid .1rem #babcc0;
     border-radius: .5rem;
-    box-shadow: .2rem .2rem 1.5rem rgb(118, 129, 153);
+    box-shadow: .2rem .1rem 1.5rem rgb(199, 205, 218);
 }
 .form__subtitulo{
     text-align: center;
