@@ -54,10 +54,89 @@
         </header>
         <main class="productos">
             <h1 class="titulo productos__titulo">Productos</h1>
-            <section class="productos__categorias">
-                <h2 class="categorias__subtitulo">Algunos de los productos Klaus</h2>
-                <div class="categorias__contenedor">
-                    <!-- camisas -->
+            <h2 class="categorias__subtitulo">Algunos de los productos Klaus</h2>
+            <section class="productos__categorias w-100">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button celeste" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Vestidos
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="contenedor__galerias">
+                                    <img class="galeria__img" src="../imagenes/vestido-rosa-princess.jpg" alt="Vestido rosa">
+
+                                </div>
+                                <div class="contenedor__galerias">
+                                    <img src="../imagenes/vestido-estampado-iva.jpg" alt="" class="galeria__img">
+
+                                </div>
+                                <div class="contenedor__galerias">
+                                    <img src="../imagenes/bermuda-violeta-silva.jpg" alt="" class="galeria__img">
+
+                                </div>
+                                <div class="contenedor__galerias">
+                                    <img src="../imagenes/short-flama.jpg" alt="" class="galeria__img">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed celeste" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Camisas
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed celeste" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Bermudas
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed celeste" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Tapabocas
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed celeste" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accesorios
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<!--                 <div class="categorias__contenedor">
                     <div class="categoria__camisas">
                         <h3 class="subtitulo3 camisas">Camisas</h3>
                         <div class="camisas__galeria">
@@ -76,7 +155,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- bermudas -->
                     <div class="categoria__bermudas">
                         <h3 class="subtitulo3 bermudas">Bermudas</h3>
                         <div class="bermudas__galeria">
@@ -90,7 +168,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- accesorios -->
                     <div class="categoria__accesorios">
                         <h3 class="subtitulo3 accesorios">Accesorios</h3>
                         <div class="accesorios__galeria">
@@ -104,7 +181,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- tapabocas -->
                     <div class="categoria__tapabocas">
                         <h3 class="subtitulo3 vestidos">Tapabocas</h3>
                         <div class="tapabocas__galeria">
@@ -116,7 +192,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- vestidos -->
                     <div class="categoria__vestidos">
                         <h3 class="subtitulo3 vestidos">Vestidos</h3>
                         <div class="vestidos__galeria">
@@ -130,9 +205,18 @@
                             </div>
                         </div>
                     </div>                    
-                </div>
+                </div>-->            
             </section>
-            <section class="productos__aclaracion" data-aos="fade-up">
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <section class="productos__aclaracion" >
                 <i class="fas fa-chevron-up"></i>
                 <i class="fas fa-chevron-up"></i>
                 <h2 class="subtitulo2 aclaracion__subtitulo"> Aclaracion</h2>
