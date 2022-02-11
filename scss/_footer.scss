@@ -1,0 +1,40 @@
+.footer{
+    grid-area: footer;
+    background-color: $color-primario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & a{
+        color: #fff;
+        .footer__icon{
+            font-size: 1.5rem;
+        }
+    }
+    .footer__subtitulo{
+        font-size: 1.2rem;
+        margin: .5rem 0;
+        padding: .5rem 0;
+        border-bottom: solid 1px $color-secundario;
+        color: $color-secundario;    
+    }
+    .footer__seguinos{
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .seguinos__subtitulo{
+            color: $color-secundario;
+        }
+        .seguinos__instagram{
+            color: #03d7e2;
+            text-decoration: none;
+            margin-left: .3rem;        
+        }
+    }
+}
+
+

@@ -1,0 +1,130 @@
+.inicio{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* 1er hijo */
+    .inicio__background{
+        width: 100vw;
+        height: 50vh;
+        background-color: $color-primario;
+        background-image: $gradiante;
+        box-shadow: .2rem .2rem 1.5rem rgb(85, 114, 172);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .background__titulo{
+            width: 100%;
+            font-size: 2.1rem;
+            padding: 1rem;
+            color: $color-secundario;
+        }
+        .background__logo{
+            height: 3rem;
+            width: 6.8rem;
+            margin: 1rem;
+            .logo__img{
+                width: 100%;
+            }
+        }
+    }
+    /* 2do hijo */
+    .inicio__introduccion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        .introduccion__subtitulo{
+            grid-area: hola;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        .introduccion__texto{
+            grid-area: texto;
+            text-align: end;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            border-right: .1rem solid $color-primario;
+        }
+        .introduccion__icono{
+            grid-area: icono;
+            width: 10rem;
+            height: 10rem;
+            .icono__img{
+                width: 100%;
+            }
+        }
+    }
+    /* 3er hijo */
+    .inicio__bienvenidos{
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .bienvenidos__subtitulo{
+            font-size: 1.1rem;
+        }
+        .bienvenidos__texto{
+            margin: 0 1rem ;
+            padding: 0 1rem;
+            border-left: solid 1px $color-primario;
+        }
+    }
+}
+
+/* tablet y desktop */
+
+@media only screen and (min-width: 768px){
+    .inicio{
+        .inicio__background{
+            height: 18rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .background__logo{
+                height: 5rem;
+                width: 10.8rem;
+                .logo__img{
+                    width: 100%;
+                }
+                .background__titulo{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .inicio__introduccion{
+            width: 100%;
+            display: grid;
+            grid-template-areas: 
+            "hola hola"
+            "icono texto"
+            "icono texto"
+            ;
+            grid-template-columns: 12rem auto;
+            .introduccion__subtitulo{
+                font-size: 2rem;
+            }
+            .introduccion__texto{
+                font-size: 1.2rem;
+                margin-right: 2rem;
+            }
+            .introduccion__icono{
+                margin: 0 2rem;
+            }
+        }
+        .inicio__bienvenidos{
+            width: 90vw;
+            flex-direction: row;
+            .bienvenidos__subtitulo{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .bienvenidos__texto{
+                padding: 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

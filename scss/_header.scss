@@ -1,0 +1,19 @@
+.header{
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    .header__nav{
+        background-color: $color-primario;
+        .nav__logo{
+            height: 3rem;
+            width: 6.8rem;        
+        }
+        .nav__boton{
+            right: 1rem;
+        }
+        .li__a{
+            color: $color-secundario;
+        }
+    }
+}
+

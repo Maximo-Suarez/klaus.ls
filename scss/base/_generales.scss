@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subtitulo2{
+    font-weight: 700;
+}
+
+p, h1, h2, h3, h4, h5, h6{
+    color: $color-primario;
+}
+
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-rows: 4rem auto 9rem;
+}
+
+.inicio, .novedades, .productos, .htp, .contactanos{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    font-size: 2rem;
+    padding: 0 1rem;
+    border: #05f solid 1px;
+    margin: 2rem 0 1rem 0 ;
+}

@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; }
+
+.subtitulo2 {
+  font-weight: 700; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #0055ff; }
+
+body {
+  min-height: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 4rem auto 9rem; }
+
+.inicio, .novedades, .productos, .htp, .contactanos {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.titulo {
+  font-size: 2rem;
+  padding: 0 1rem;
+  border: #05f solid 1px;
+  margin: 2rem 0 1rem 0; }
+
+.header {
+  position: fixed;
+  width: 100vw;
+  z-index: 1000; }
+  .header .header__nav {
+    background-color: #0055ff; }
+    .header .header__nav .nav__logo {
+      height: 3rem;
+      width: 6.8rem; }
+    .header .header__nav .nav__boton {
+      right: 1rem; }
+    .header .header__nav .li__a {
+      color: #fff !important; }
+
+.footer {
+  grid-area: footer;
+  background-color: #0055ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer a {
+    color: #fff; }
+    .footer a .footer__icon {
+      font-size: 1.5rem; }
+  .footer .footer__subtitulo {
+    font-size: 1.2rem;
+    margin: .5rem 0;
+    padding: .5rem 0;
+    border-bottom: solid 1px #fff !important;
+    color: #fff !important; }
+  .footer .footer__seguinos {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .footer .footer__seguinos .seguinos__subtitulo {
+      color: #fff !important; }
+    .footer .footer__seguinos .seguinos__instagram {
+      color: #03d7e2;
+      text-decoration: none;
+      margin-left: .3rem; }
+
+.inicio {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* 1er hijo */
+  /* 2do hijo */
+  /* 3er hijo */ }
+  .inicio .inicio__background {
+    width: 100vw;
+    height: 50vh;
+    background-color: #0055ff;
+    background-image: linear-gradient(90deg, #0339a4 0%, #0055ff 35%, #00cbd7 100%);
+    box-shadow: 0.2rem 0.2rem 1.5rem #5572ac;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .inicio .inicio__background .background__titulo {
+      width: 100%;
+      font-size: 2.1rem;
+      padding: 1rem;
+      color: #fff !important; }
+    .inicio .inicio__background .background__logo {
+      height: 3rem;
+      width: 6.8rem;
+      margin: 1rem; }
+      .inicio .inicio__background .background__logo .logo__img {
+        width: 100%; }
+  .inicio .inicio__introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem; }
+    .inicio .inicio__introduccion .introduccion__subtitulo {
+      grid-area: hola;
+      font-size: 1.2rem;
+      text-align: center; }
+    .inicio .inicio__introduccion .introduccion__texto {
+      grid-area: texto;
+      text-align: end;
+      padding-right: 1rem;
+      margin-right: 1rem;
+      border-right: 0.1rem solid #0055ff; }
+    .inicio .inicio__introduccion .introduccion__icono {
+      grid-area: icono;
+      width: 10rem;
+      height: 10rem; }
+      .inicio .inicio__introduccion .introduccion__icono .icono__img {
+        width: 100%; }
+  .inicio .inicio__bienvenidos {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .inicio .inicio__bienvenidos .bienvenidos__subtitulo {
+      font-size: 1.1rem; }
+    .inicio .inicio__bienvenidos .bienvenidos__texto {
+      margin: 0 1rem;
+      padding: 0 1rem;
+      border-left: solid 1px #0055ff; }
+
+/* tablet y desktop */
+@media only screen and (min-width: 768px) {
+  .inicio .inicio__background {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .inicio .inicio__background .background__logo {
+      height: 5rem;
+      width: 10.8rem; }
+      .inicio .inicio__background .background__logo .logo__img {
+        width: 100%; }
+      .inicio .inicio__background .background__logo .background__titulo {
+        font-size: 2.5rem; }
+  .inicio .inicio__introduccion {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "hola hola" "icono texto" "icono texto";
+    grid-template-columns: 12rem auto; }
+    .inicio .inicio__introduccion .introduccion__subtitulo {
+      font-size: 2rem; }
+    .inicio .inicio__introduccion .introduccion__texto {
+      font-size: 1.2rem;
+      margin-right: 2rem; }
+    .inicio .inicio__introduccion .introduccion__icono {
+      margin: 0 2rem; }
+  .inicio .inicio__bienvenidos {
+    width: 90vw;
+    flex-direction: row; }
+    .inicio .inicio__bienvenidos .bienvenidos__subtitulo {
+      font-size: 1.5rem;
+      text-align: center; }
+    .inicio .inicio__bienvenidos .bienvenidos__texto {
+      padding: 2rem;
+      font-size: 1.1rem; } }
