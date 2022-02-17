@@ -1,0 +1,168 @@
+.contactanos{
+    height: 57rem;
+    overflow-x: hidden;
+    /* 1er hijo */
+    .contactanos__titulo{
+        width: 15rem;
+        text-align: center;
+        border: 0.1rem #05f solid;
+    }
+    /* 2do hijo */
+    .contactanos__aclaracion{
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
+        box-shadow: .2rem .2rem 1.5rem rgb(118, 129, 153);
+        .aclaracion__subtitulo{
+            width: 50%;
+            color: #fff;
+            box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
+            border: solid .1rem #fff;
+            text-align: center;
+        }
+        .aclaracion__texto2{
+            color: #fff;
+            border-left: solid .1rem #fff;
+            padding-left: 1rem;
+            margin-left: 1rem;
+        }
+    }
+    /* 3er hijo */
+    .contactanos__opciones{
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .opciones__instagram{
+            border: solid #05f .1rem;
+            padding: .5rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95vw;
+            align-self: center;
+            .instagram__link{
+                margin-left: .5rem;
+                text-decoration: none;
+                text-align: center;
+                color: #fff;
+                width: 6rem;
+                background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 130, 204) 100%);
+                border-radius: .3rem;
+                &:focus{
+                    color: #03d7e2;
+                }
+            }
+        }
+        .opciones__formulario{
+            border: solid .1rem #babcc0;
+            border-radius: .5rem;
+            box-shadow: .2rem .1rem 1.5rem rgb(199, 205, 218);
+            .formulario__contenedor{
+                .contenedor__subtitulo{
+                    text-align: center;
+                }
+                .contenedor__form{
+                    .form__input1{
+                        &:focus{
+                            box-shadow: .1rem .1rem 1rem rgb(118, 164, 255);
+                            border: #05f solid .1rem;
+                            outline: none;                    
+                        }
+                    }
+                    .form__input2{
+                        &:focus{
+                            box-shadow: .1rem .1rem 1rem rgb(118, 164, 255);
+                            border: #05f solid .1rem;
+                            outline: none;                    
+                        }
+                    }
+                    .form__input3{
+                        background: #fff;
+                        border: .1rem #05f solid;
+                        border-radius: .2rem;
+                        padding: .2rem 1rem;
+                        &:focus{
+                            box-shadow: .1rem .1rem 1rem rgb(118, 164, 255);
+                            border: #05f solid .1rem;
+                            outline: none;                    
+                        }
+                    }
+                    .form__input4{
+                        color: #fff;
+                        background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 130, 204) 100%);
+                        box-shadow: .1rem .1rem 1rem rgba(255, 255, 255, 0.363);
+                        border: #fff solid .1rem;
+                        border-radius: .2rem;
+                        padding: .2rem 1rem;
+                        &:focus{
+                            box-shadow: .1rem .1rem 1rem #063dac;
+                            border: #063dac solid .1rem;    
+                            outline: none;                    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    .contactanos{
+        height: 55rem;
+        /* 1er hijo */
+        .contactanos__titulo{
+            width: 50%;
+            font-size: 3rem;
+        }
+        /* 2do hijo */
+        .contactanos__aclaracion{
+            align-items: flex-start;
+            padding-left: 2rem;
+            width: 100vw;
+            .aclaracion__subtitulo{
+                margin-left: 1rem;
+                width: 40vw;
+            }
+            .aclaracion__texto2{
+                padding-left: 1rem;
+                margin-left: 1rem;
+                width: 40vw;
+            }
+        }
+        /* 3er hijo */
+        .contactanos__opciones{
+            .opciones__instagram{
+                width: 50vw;
+            }
+            .opciones__form{
+                .form__subtitulo{
+                    text-align: start;
+                    margin: 1rem;
+                }    
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .contactanos{
+        height: 60rem;
+        .contactanos__aclaracion{
+            height: 18rem;
+            .aclaracion__texto2{
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+
+
+
+
