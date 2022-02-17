@@ -1,0 +1,64 @@
+.productos{
+    row-gap: 1rem;
+    /* 1er hijo */
+    .productos__titulo{
+        font-size: 3rem;
+    }
+    /* 2do hijo */
+    .productos__subtitulo{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    /* 3er hijo */
+    .productos__categorias{
+        .categorias__categoria{
+            .categoria__subtitulo{
+                text-align: center;
+                margin: auto 0;
+                border-color: $color-secundario;
+                box-shadow: map-get($shadow, chica);
+                @extend %cartel
+            }
+            .categoria__galeria{
+                margin: .5rem auto 2rem auto !important;
+                .galeria__img{
+                    margin: 1rem auto;
+                    box-shadow: map-get($shadow, chica);
+                }
+                .galeria__subtitulo{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+    .productos{
+        /* 2do hijo */
+        .productos__subtitulo{
+            font-size: 2rem;
+        }
+        /* 3er hijo */
+        .productos__categorias{
+            border: solid .1rem $color-primario;
+            border-radius: .5rem;
+            box-shadow: map-get($shadow, grande );
+            margin: 2rem auto 3rem auto;
+            .categorias__categoria{
+                .impar{
+                    border-left: solid .1rem $color-primario;
+                }
+                .par{
+                    border-right: solid .1rem $color-primario;
+                }
+                .categoria__galeria{
+                    .galeria__subtitulo{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}

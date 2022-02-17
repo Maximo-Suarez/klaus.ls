@@ -52,9 +52,91 @@
                 </div>
             </nav>
         </header>
-
-        <main>
-
+        <main class="productos">
+            <h1 class="titulo productos__titulo">Productos</h1>
+            <h2 class="productos__subtitulo">Algunos de nuestros productos</h2>
+            <section class="productos__categorias container">
+                <article class="categorias__categoria row">
+                    <h3 class="categoria__subtitulo col-12 col-md-4" >Vestidos</h3>
+                    <div class="categoria__galeria impar col-12 col-md-6 row m-auto">
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/vestido-azul.jpg" alt="Vestido azul liso con tajo en pierna">
+                            <h4 class="galeria__subtitulo">Azul liso</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/vestido-bordo.jpg" alt="Vestido corto bordo liso">
+                            <h4 class="galeria__subtitulo">Bordo liso</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/vestido-candance.jpg" alt="Vestido largo rojo con plantas de color amarillo, blanco, celeste y rosa">
+                            <h4 class="galeria__subtitulo">"Candance"</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/vestido-catherine.jpg" alt="Vestido corto floreado color celeste y blanco">
+                            <h4 class="galeria__subtitulo">"Catherine"</h4>
+                        </div>
+                    </div>
+                </article>
+                <article class="categorias__categoria row d-md-flex flex-row-reverse">
+                    <h3 class="categoria__subtitulo col-12 col-md-4" >Faldas</h3>
+                    <div class="categoria__galeria par col-12 col-md-6 row m-auto">
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/falda-blanca.jpg" alt="falda color blanca con tiras negras">
+                            <h4 class="galeria__subtitulo">Blanca y negra</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/falda-gogo.jpg" alt="falda color azul y roja hecha con tela gogo">
+                            <h4 class="galeria__subtitulo">Tela gogo</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/falda-kendal.jpg" alt="falda color negra con tajo en pierna derecha">
+                            <h4 class="galeria__subtitulo">"Kendall"</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/falda-terry.jpg" alt="falda color azul con tiras blancas">
+                            <h4 class="galeria__subtitulo">"Terry"</h4>
+                        </div>
+                    </div>
+                </article>
+                <article class="categorias__categoria row">
+                    <h3 class="categoria__subtitulo col-12 col-md-4" >Crop tops</h3>
+                    <div class="categoria__galeria impar col-12 col-md-6 row m-auto">
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/top-amarillo.jpg" alt="">
+                            <h4 class="galeria__subtitulo">Amarillo</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/top-dash-ig.jpg" alt="">
+                            <h4 class="galeria__subtitulo">"Dash"</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/top-lou.jpg" alt="">
+                            <h4 class="galeria__subtitulo">"Lou"</h4>
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/top-floreado.jpg" alt="">
+                            <h4 class="galeria__subtitulo">Coleccion paraside</h4>
+                        </div>
+                    </div>
+                </article>
+                <article class="categorias__categoria row d-md-flex flex-row-reverse">
+                    <h3 class="categoria__subtitulo col-12 col-md-4" >Tapabocas</h3>
+                    <div class="categoria__galeria par col-12 col-md-6 row m-auto">
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/tapabocas-blanco-rojo-negro.jpg" alt="tres tapabocas de diferentes colores blanco, rojo y negro">
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/tapabocas-blancofloreado.jpg" alt="tapabocas blanco con flores rosas">
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/tapabocas-cuadrille-azul.jpg" alt="tapabocas con tela cuadrille color azul">
+                        </div>
+                        <div class="col-6">
+                            <img class="w-100 galeria__img" src="../imagenes/tapabocas-cuadrille-marron.jpg" alt="tapabocas con tela cuadrille color marrón">                            
+                        </div>
+                    </div>
+                </article>
+            </section>
         </main>
         <footer class="footer">
             <h3 class="footer__subtitulo">Contáctanos en @klaus.ls</h3>
@@ -72,141 +154,4 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
-
-
-<!-- 
-    <main class="productos">
-        <h1 class="titulo productos__titulo">Productos</h1>
-        <h2 class="productos__subtitulo">Algunos de nuestros productos</h2>
-        <section class="accordion productos__acordeon w-100" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item acordeon__item">
-                <h2 class="accordion-header item__subtitulo" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button h2__boton blanco" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Vestidos
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show item__contenido" aria-labelledby="panelsStayOpen-headingOne">
-                    <div class="accordion-body contenido__galeria">
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/vestido-rosa-princess.jpg" alt="Vestido rosa">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/vestido-estampado-iva.jpg" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/bermuda-violeta-silva.jpg" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/short-flama.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item acordeon__item">
-                <h2 class="accordion-header item__subtitulo" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed h2__boton blanco" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                    Camisas
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse item__contenido" aria-labelledby="panelsStayOpen-headingTwo">
-                    <div class="accordion-body contenido__galeria">
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/camisa-kary.jpg" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item acordeon__item">
-                <h2 class="accordion-header item__subtitulo" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed h2__boton blanco" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                    Bermudas
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse item__contenido" aria-labelledby="panelsStayOpen-headingThree">
-                    <div class="accordion-body contenido__galeria">
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item acordeon__item">
-                <h2 class="accordion-header item__subtitulo" id="panelsStayOpen-headingFour">
-                    <button class="accordion-button collapsed h2__boton blanco" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-                    Tapabocas
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse item__contenido" aria-labelledby="panelsStayOpen-headingFour">
-                    <div class="accordion-body contenido__galeria">
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item acordeon__item">
-                <h2 class="accordion-header item__subtitulo" id="panelsStayOpen-headingFive">
-                    <button class="accordion-button collapsed h2__boton blanco" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-                    Accesorios
-                    </button>
-                </h2>
-                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse item__contenido" aria-labelledby="panelsStayOpen-headingFive">
-                    <div class="accordion-body contenido__galeria">
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                        <div class="galeria__img-contenedor">
-                            <img class="contenedor__img" src="../imagenes/" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="productos__aclaracion" >
-            <i class="fas fa-chevron-up aclaracion__icon1"></i>
-            <i class="fas fa-chevron-up aclaracion__icon2"></i>
-            <div class="aclaracion__contenedor">
-                <h2 class="subtitulo2 contenedor__subtitulo"> Aclaracion</h2>
-                <p class="contenedor__texto"> Estas prendas (sin contar accesorios) son una pequeña cantidad de trabajos realizados en Klaus.ls para tomar de referencia por si alguno te gusta</p>
-            </div>
-        </section>
-    </main>
--->    
-
-
-
-
 </html>

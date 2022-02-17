@@ -8,17 +8,15 @@ $gradiantes: (
     desktop: linear-gradient(90deg, rgba(3,57,164,1) 0%, rgba(0,85,255,1) 35%, rgba(0,203,215,1) 100%),
 );
 $shadow: (
-    grande: .1rem .1rem 2rem #727272,
-    mediana: .1rem .1rem 1.5rem #727272,
-    chica: .1rem .1rem 1rem #727272,
+    grande: .1rem .1rem 2rem #cfcfcf,
+    mediana: .1rem .1rem 1.5rem #adadad,
+    chica: .1rem .1rem 1rem #adadad,
 );
 /* extend */
-%card{
-    border: solid .1rem #727272;
-    border-radius: .5rem;
+%cartel{
+    background-image: map-get($gradiantes, mobile );
+    color: $color-secundario;
     padding: 1rem;
-    margin: 1rem;
-    box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
 }
 /* mixin */
 @mixin flexbox ($direction, $justify, $align, $wrap) {
