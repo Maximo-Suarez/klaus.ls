@@ -9,7 +9,7 @@
         <!-- BOOTSTRAP -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">        
         <!-- CSS -->
-        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <!-- FONT FAMILY -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,37 +20,37 @@
         <title>Contacto</title>
     </head>
     <body>
-                <!--________________________________ header ______________________________-->
+    <!--________________________________ header ______________________________-->
         <header class="header">
-                <nav class="navbar navbar-expand-lg navbar-light bg-klaus">
-                    <div class="container">
-                        <div class=" position-relative m-auto">
-                            <a class="navbar-brand" href="#"> <img class="logo-chico" src="../imagenes/logo-blanco-removebg-preview.png" alt="Logo de Klaus.ls"></a>
-                        </div>
-                        <button class="navbar-toggler position-absolute nav__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav w-100 justify-content-end">
-                                <li class="nav-item">
-                                    <a class="nav-link active blanco" aria-current="page" href="../index.html">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active blanco" href="./novedades.html">Novedades</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active blanco" href="./productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active blanco" href="./hace-tu-pedido.html">Hace tu pedido</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active blanco" href="#">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
+            <nav class="navbar navbar-expand-lg navbar-light header__nav">
+                <div class="container">
+                    <div class=" position-relative m-auto">
+                        <a class="navbar-brand" href="#"> <img class="nav__logo" src="../imagenes/logo-blanco-removebg-preview.png" alt="Logo de Klaus.ls"></a>
                     </div>
-                </nav>
+                    <button class="navbar-toggler position-absolute nav__boton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active li__a" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active li__a" href="./novedades.html">Novedades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active li__a" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active li__a" href="./hace-tu-pedido.html">Hace tu pedido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active li__a" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <main class="contactanos">
             <h1 class="titulo contactanos__titulo">Contáctanos</h1>
@@ -67,14 +67,14 @@
                     <a class="instagram__link" href="http://instagram.com/klaus.ls/">instagram</a>
                 </div>
                 <!-- form -->
-                <div class="opciones__form container">
-                    <div class="row">
-                        <h3 class="subtitulo3 form__subtitulo display-6 col-12">o llená este formulario:</h3>
-                        <form class="form__formulario col-12 col-md-8">
-                            <input class="w-100 my-2" type="text" placeholder="Escribe tu nombre" required>
-                            <input class="w-100 my-2" type="email" placeholder="Escribe tu email" required>
-                            <input class="w-100 my-2" type="reset" value="Reestablecer">
-                            <input class="w-100 my-2" type="submit" value="Enviar">
+                <div class="opciones__formulario container">
+                    <div class="formulario__contenedor row">
+                        <h3 class="subtitulo3 contenedor__subtitulo display-6 col-12">o llená este formulario:</h3>
+                        <form class="col-12 col-md-8 contenedor__form">
+                            <input class="w-100 my-2 form__input1" type="text" placeholder="Escribe tu nombre" required>
+                            <input class="w-100 my-2 form__input2" type="email" placeholder="Escribe tu email" required>
+                            <input class="w-100 my-2 form__input3" type="reset" value="Reestablecer">
+                            <input class="w-100 my-2 form__input4" type="submit" value="Enviar">
                         </form>
                         <div class="col-4 col-md-2 m-auto">
                             <img class="w-100" src="../imagenes/fomulario-icono.png" alt="icono de formulario">

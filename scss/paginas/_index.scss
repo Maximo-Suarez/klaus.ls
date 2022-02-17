@@ -9,7 +9,7 @@
         width: 100vw;
         height: 50vh;
         background-color: $color-primario;
-        background-image: $gradiante;
+        background-image: map-get($gradiantes, mobile );
         box-shadow: .2rem .2rem 1.5rem rgb(85, 114, 172);
         display: flex;
         flex-direction: column;
@@ -83,6 +83,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            background-image: map-get($gradiantes, desktop);
             .background__logo{
                 height: 5rem;
                 width: 10.8rem;
