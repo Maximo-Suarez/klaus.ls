@@ -1,9 +1,6 @@
 .inicio{
     grid-area: main;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox (column, space-between, center, nowrap);
     /* 1er hijo */
     .inicio__background{
         width: 100vw;
@@ -11,9 +8,7 @@
         background-color: $color-primario;
         background-image: map-get($gradiantes, mobile );
         box-shadow: .2rem .2rem 1.5rem rgb(85, 114, 172);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @include flexbox (column, space-around, flex-start, nowrap);
         .background__titulo{
             width: 100%;
             font-size: 2.1rem;
@@ -31,9 +26,7 @@
     }
     /* 2do hijo */
     .inicio__introduccion{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flexbox (column, center, center, nowrap);
         margin-top: 2rem;
         .introduccion__subtitulo{
             grid-area: hola;
@@ -59,10 +52,7 @@
     /* 3er hijo */
     .inicio__bienvenidos{
         height: 15rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flexbox (column, space-evenly, center, nowrap);
         .bienvenidos__subtitulo{
             font-size: 1.1rem;
         }
@@ -80,10 +70,8 @@
     .inicio{
         .inicio__background{
             height: 18rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
             background-image: map-get($gradiantes, desktop);
+            @include flexbox(column, space-evenly, flex-start, nowrap);
             .background__logo{
                 height: 5rem;
                 width: 10.8rem;

@@ -6,47 +6,39 @@
     }
     /* 2do hijo */
     .htp__SeguiLosPasos{
-        background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
-        box-shadow: .1rem .1rem .6rem #063dac;
+        background-image: map-get($gradiantes, mobile);
+        box-shadow: map-get($shadow, mediana);
         height: 45rem;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flexbox(column, space-evenly, center, nowrap);
         .SeguiLosPasos__subtitulo{
             text-align: center;
-            border: solid .1rem #fff;
+            border: solid .1rem $color-secundario;
             box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
             padding: 0 1rem;
             width: 90%;
-            color: #fff;
+            color: $color-secundario;
         }
         .SeguiLosPasos__texto{
             font-size: 1.5rem;
             padding: 0 1rem;
-            border: solid .1rem #fff;
+            border: solid .1rem $color-secundario;
             box-shadow: .2rem .2rem 1rem rgba(255, 255, 255, 0.466);
-            color: #fff;
+            color: $color-secundario;
         }
         .SeguiLosPasos__contenedor{
             .contenedor__pasos{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
+                @include flexbox(column, space-evenly, center, nowrap);
                 list-style: none;
                 padding-left: 0;
                 .paso__1, .paso__2, .paso__3{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    @include flexbox(column, flex-start, center, nowrap);
                     margin: 1rem;
                     .paso__p{
                         text-align: center;
-                        color: #fff;
+                        color: $color-secundario;
                         & a{
-                            color: #fff;
+                            color: $color-secundario;
                         }
                     }
                 }
@@ -56,20 +48,17 @@
     /* 3er hijo */
     .htp__lugares{
         height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flexbox(column, space-evenly, center, nowrap);
         .lugares__subtitulo{
             font-size: 2rem;
-            border: .1rem solid #05f;
+            border: .1rem solid $color-primario;
             padding: 0 1rem;
         }
         .lugares__texto{
             font-size: 1.2rem;
             padding: 0 1rem;
             margin: 0 1rem;
-            border-left: solid .1rem #05f;
+            border-left: solid .1rem $color-primario;
         }
     }
     /* 4to hijo */
@@ -100,6 +89,7 @@
             grid-area: titulo;
             display: flex;
             justify-content: center;
+            @include flexbox(row, center, center, nowrap);
             border: none;
         }
         /* 2do hijo */
@@ -122,7 +112,7 @@
                             text-align: start;
                             padding: 0 0 0 1rem;
                             margin-left: 1rem;
-                            border-left: solid #fff .1rem;
+                            border-left: solid .1rem $color-secundario;
                         }
                     }
                 }
@@ -132,19 +122,17 @@
         .htp__lugares{
             grid-area: lugares;
             height: 20rem;
-            border: solid .1rem #05f;
+            border: solid .1rem $color-primario;
             .lugares__texto{
                 border-left: none;
-                border-right: .1rem solid #05f;
+                border-right: .1rem solid $color-primario;
                 text-align: end;
             }
         }
         /* 4to hijo */
         .htp__celular{
-            display: flex;
             grid-area: celular;
-            justify-content: center;
-            align-content: center;
+            @include flexbox(row, center, center, nowrap);
             .celular__img{
                 width: 216px;
                 height: 384px;
