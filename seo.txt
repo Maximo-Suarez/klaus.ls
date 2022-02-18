@@ -1,0 +1,10 @@
+Para mejorar el seo de mi sitio web: 
+En la página productos:
+ _Agregue imagenes .jpg del mismo tamaño, de menor peso c/u a las que estaban originalmente y además las comprimí.
+ _Cambié etiquetas para mejorar la semántica: div por aticle y sections. Y subtitulos por sus respectivos h (más coherentes).
+
+En todas las páginas:
+_Agregué alt más descriptivos en todas las img de mi sitio web.
+_Agregué keywords iguales (excepto en productos donde además pongo las prendas que se verán allí).
+_Agregué descriptions.
+_En las etiquetas title agregué "Klaus |" seguido por el nombre de la pagina.
