@@ -31,10 +31,15 @@ body {
   align-items: center; }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 0 1rem;
-  border: #05f solid 1px;
+  border: #0055ff solid 0.1rem;
   margin: 2rem 0 1rem 0; }
+
+@media only screen and (min-width: 768px) {
+  .titulo {
+    width: 50%;
+    text-align: center; } }
 
 .header {
   position: fixed;
@@ -58,9 +63,7 @@ body {
   justify-content: space-evenly;
   align-items: center; }
   .footer a {
-    color: #fff; }
-    .footer a .footer__icon {
-      font-size: 1.5rem; }
+    color: #fff !important; }
   .footer .footer__subtitulo {
     font-size: 1.2rem;
     margin: .5rem 0;
@@ -70,15 +73,14 @@ body {
   .footer .footer__seguinos {
     width: 65%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
     .footer .footer__seguinos .seguinos__subtitulo {
       color: #fff !important; }
-    .footer .footer__seguinos .seguinos__instagram {
-      color: #03d7e2;
-      text-decoration: none;
-      margin-left: .3rem; }
+    .footer .footer__seguinos .seguinos__icon {
+      font-size: 2rem; }
 
 .inicio {
   grid-area: main;
@@ -87,6 +89,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
+  overflow-x: hidden;
   /* 1er hijo */
   /* 2do hijo */
   /* 3er hijo */ }
@@ -174,8 +177,7 @@ body {
     .inicio .inicio__introduccion .introduccion__subtitulo {
       font-size: 2rem; }
     .inicio .inicio__introduccion .introduccion__texto {
-      font-size: 1.2rem;
-      margin-right: 2rem; }
+      font-size: 1.5rem; }
     .inicio .inicio__introduccion .introduccion__icono {
       margin: 0 2rem; }
   .inicio .inicio__bienvenidos {
@@ -186,7 +188,7 @@ body {
       text-align: center; }
     .inicio .inicio__bienvenidos .bienvenidos__texto {
       padding: 2rem;
-      font-size: 1.1rem; } }
+      font-size: 1.5rem; } }
 
 .novedades .novedades__titulo {
   font-size: 3rem; }
@@ -214,7 +216,8 @@ body {
     font-size: 1.2rem; }
   .novedades .novedades__texto i {
     font-size: 1.9rem;
-    transform: translate(100%, -50%); }
+    transform: translate(100%, -50%);
+    color: #0055ff; }
 
 @media only screen and (min-width: 768px) {
   .novedades {
@@ -244,13 +247,15 @@ body {
 .productos {
   row-gap: 1rem;
   /* 1er hijo */
-  /* 2do hijo */
-  /* 3er hijo */ }
+  /* 2do hijo */ }
   .productos .productos__titulo {
     font-size: 3rem; }
-  .productos .productos__subtitulo {
+  .productos .productos__categorias .categorias__subtitulo {
     font-size: 1.4rem;
-    text-align: center; }
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-weight: 700; }
   .productos .productos__categorias .categorias__categoria .categoria__subtitulo {
     text-align: center;
     margin: auto 0;
@@ -267,21 +272,22 @@ body {
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .productos {
-    /* 2do hijo */
-    /* 3er hijo */ }
-    .productos .productos__subtitulo {
-      font-size: 2rem; }
+    /* 2do hijo */ }
     .productos .productos__categorias {
       border: solid 0.1rem #0055ff;
       border-radius: .5rem;
       box-shadow: 0.1rem 0.1rem 2rem #cfcfcf;
       margin: 2rem auto 3rem auto; }
-      .productos .productos__categorias .categorias__categoria .impar {
-        border-left: solid 0.1rem #0055ff; }
-      .productos .productos__categorias .categorias__categoria .par {
-        border-right: solid 0.1rem #0055ff; }
-      .productos .productos__categorias .categorias__categoria .categoria__galeria .galeria__subtitulo {
-        font-size: 1.4rem; } }
+      .productos .productos__categorias .categorias__subtitulo {
+        font-size: 2rem; }
+      .productos .productos__categorias .categorias__categoria {
+        padding-bottom: 5rem; }
+        .productos .productos__categorias .categorias__categoria .impar {
+          border-left: solid 0.1rem #0055ff; }
+        .productos .productos__categorias .categorias__categoria .par {
+          border-right: solid 0.1rem #0055ff; }
+        .productos .productos__categorias .categorias__categoria .categoria__galeria .galeria__subtitulo {
+          font-size: 1.4rem; } }
 
 .htp {
   height: 65rem;
@@ -371,14 +377,7 @@ body {
     /* 4to hijo */ }
     .htp .htp__titulo {
       grid-area: titulo;
-      display: flex;
-      justify-content: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-      border: none; }
+      justify-self: center; }
     .htp .htp__SeguiLosPasos {
       grid-area: pasos;
       align-items: center;

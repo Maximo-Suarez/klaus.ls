@@ -5,12 +5,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
     & a{
-        color: #fff;
-        .footer__icon{
-            font-size: 1.5rem;
-        }
+        color: $color-secundario;
     }
     .footer__subtitulo{
         font-size: 1.2rem;
@@ -21,18 +17,12 @@
     }
     .footer__seguinos{
         width: 65%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        
+        @include flexbox(column, center, center, nowrap);
         .seguinos__subtitulo{
             color: $color-secundario;
         }
-        .seguinos__instagram{
-            color: #03d7e2;
-            text-decoration: none;
-            margin-left: .3rem;        
+        .seguinos__icon{
+            font-size: 2rem;
         }
     }
 }

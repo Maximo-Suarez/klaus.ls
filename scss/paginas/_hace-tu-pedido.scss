@@ -87,10 +87,7 @@
         /* 1er hijo */
         .htp__titulo{
             grid-area: titulo;
-            display: flex;
-            justify-content: center;
-            @include flexbox(row, center, center, nowrap);
-            border: none;
+            justify-self: center;
         }
         /* 2do hijo */
         .htp__SeguiLosPasos{

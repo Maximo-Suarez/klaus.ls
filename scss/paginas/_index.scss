@@ -1,6 +1,7 @@
 .inicio{
     grid-area: main;
     @include flexbox (column, space-between, center, nowrap);
+    overflow-x: hidden;
     /* 1er hijo */
     .inicio__background{
         width: 100vw;
@@ -96,8 +97,7 @@
                 font-size: 2rem;
             }
             .introduccion__texto{
-                font-size: 1.2rem;
-                margin-right: 2rem;
+                font-size: 1.5rem;
             }
             .introduccion__icono{
                 margin: 0 2rem;
@@ -112,7 +112,7 @@
             }
             .bienvenidos__texto{
                 padding: 2rem;
-                font-size: 1.1rem;
+                font-size: 1.5rem;
             }
         }
     }

@@ -5,12 +5,14 @@
         font-size: 3rem;
     }
     /* 2do hijo */
-    .productos__subtitulo{
-        font-size: 1.4rem;
-        text-align: center;
-    }
-    /* 3er hijo */
     .productos__categorias{
+        .categorias__subtitulo{
+            font-size: 1.4rem;
+            text-align: center;
+            padding: 1rem;
+            padding-bottom: 2rem;
+            font-weight: 700;
+        }
         .categorias__categoria{
             .categoria__subtitulo{
                 text-align: center;
@@ -37,16 +39,16 @@
 @media only screen and (min-width: 768px){
     .productos{
         /* 2do hijo */
-        .productos__subtitulo{
-            font-size: 2rem;
-        }
-        /* 3er hijo */
         .productos__categorias{
             border: solid .1rem $color-primario;
             border-radius: .5rem;
             box-shadow: map-get($shadow, grande );
             margin: 2rem auto 3rem auto;
+            .categorias__subtitulo{
+                font-size: 2rem;
+            }
             .categorias__categoria{
+                padding-bottom: 5rem;
                 .impar{
                     border-left: solid .1rem $color-primario;
                 }
