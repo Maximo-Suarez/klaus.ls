@@ -42,18 +42,44 @@ body {
     text-align: center; } }
 
 .header {
+  background-color: #0055ff;
   position: fixed;
+  z-index: 1000;
   width: 100vw;
-  z-index: 1000; }
+  height: 4rem; }
   .header .header__nav {
-    background-color: #0055ff; }
-    .header .header__nav .nav__logo {
-      height: 3rem;
-      width: 6.8rem; }
-    .header .header__nav .nav__boton {
-      right: 1rem; }
-    .header .header__nav .li__a {
-      color: #fff !important; }
+    background-color: #0055ff !important; }
+    .header .header__nav .nav__contenedor {
+      position: relative; }
+      .header .header__nav .nav__contenedor .contenedor__logo {
+        height: 3rem;
+        width: 6.8rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0%); }
+        .header .header__nav .nav__contenedor .contenedor__logo .logo__img {
+          width: 100%; }
+      .header .header__nav .nav__contenedor .contenedor__links .links__ul .ul__li a {
+        color: #fff !important;
+        font-size: 1.3rem; }
+
+@media only screen and (min-width: 992px) {
+  .header .header__nav .nav__contenedor .contenedor__logo {
+    height: 3rem;
+    width: 6.8rem;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateX(0); }
+  .header .header__nav .nav__contenedor .contenedor__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap; }
+    .header .header__nav .nav__contenedor .contenedor__links .links__ul .ul__li a {
+      font-size: 1rem; } }
 
 .footer {
   grid-area: footer;
@@ -294,8 +320,7 @@ body {
     font-size: 1.4rem;
     text-align: center;
     padding: 1rem;
-    padding-bottom: 2rem;
-    font-weight: 700; }
+    padding-bottom: 2rem; }
   .productos .productos__categorias .categorias__categoria .categoria__subtitulo {
     text-align: center;
     margin: auto 0;
@@ -330,7 +355,7 @@ body {
           font-size: 1.4rem; } }
 
 .htp {
-  height: 65rem;
+  height: 70rem;
   /* 1er hijo */
   /* 2do hijo */
   /* 3er hijo */
@@ -350,15 +375,16 @@ body {
     .htp .htp__SeguiLosPasos .SeguiLosPasos__subtitulo {
       text-align: center;
       border: solid 0.1rem #fff !important;
-      box-shadow: 0.2rem 0.2rem 1rem rgba(255, 255, 255, 0.466);
+      box-shadow: 0.2rem 0.2rem 1rem #fff !important;
       padding: 0 1rem;
-      width: 90%;
-      color: #fff !important; }
+      width: 80%;
+      color: #fff !important;
+      font-size: 1.3rem; }
     .htp .htp__SeguiLosPasos .SeguiLosPasos__texto {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       padding: 0 1rem;
       border: solid 0.1rem #fff !important;
-      box-shadow: 0.2rem 0.2rem 1rem rgba(255, 255, 255, 0.466);
+      box-shadow: 0.2rem 0.2rem 1rem #fff !important;
       color: #fff !important; }
     .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos {
       display: flex;
@@ -477,7 +503,6 @@ body {
   /* 2do hijo */
   /* 3er hijo */ }
   .contactanos .contactanos__titulo {
-    width: 15rem;
     text-align: center;
     border: 0.1rem #0055ff solid; }
   .contactanos .contactanos__aclaracion {
