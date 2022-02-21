@@ -63,27 +63,61 @@
             border-left: solid 1px $color-primario;
         }
     }
-}
-
-/* tablet y desktop */
-
-@media only screen and (min-width: 768px){
-    .inicio{
-        .inicio__background{
-            height: 18rem;
-            background-image: map-get($gradiantes, desktop);
-            @include flexbox(column, space-evenly, flex-start, nowrap);
-            .background__logo{
-                height: 5rem;
-                width: 10.8rem;
-                .logo__img{
-                    width: 100%;
+    /* 4to hijo */
+    .inicio__enlaces{
+        padding-bottom: 3rem;
+        margin-top: 1rem;
+        .enlaces__enlace{
+            background-color: $color-primario;
+            position: relative;
+            padding: 0;
+            margin-bottom: 2rem !important;
+            border-radius: .2rem;
+            box-shadow: map-get($shadow, mediana);
+            .enlace__ancor{
+                .ancor__img{
+                    opacity: .5;
                 }
-                .background__titulo{
-                    font-size: 2.5rem;
+                .ancor__texto{
+                    position: absolute;
+                    z-index: 100;
+                    transform: translate(-50%, -50%);
+                    font-size: 2rem;
+                    color: $color-secundario;
+                    left: 50%;
+                    top: 25%;
+                    font-weight: 900;
+                    letter-spacing: .3rem;
                 }
             }
         }
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 768px){
+    .inicio{
+        /* 1er hijo */
+        .inicio__background{
+            height: 75vh;
+            background-image: map-get($gradiantes, desktop);
+            @include flexbox(column, space-evenly, flex-start, nowrap);
+            .background__titulo{
+                    font-size: 3rem;
+                    padding-left: 2rem;
+                    width: 75%;
+                }
+            .background__logo{
+                height: 5rem;
+                width: 10.8rem;
+                margin-left: 2rem;
+                .logo__img{
+                    width: 100%;
+                }
+            }
+        }
+        /* 2do hijo */
         .inicio__introduccion{
             width: 100%;
             display: grid;
@@ -103,6 +137,7 @@
                 margin: 0 2rem;
             }
         }
+        /* 3er hijo */
         .inicio__bienvenidos{
             width: 90vw;
             flex-direction: row;
@@ -115,5 +150,22 @@
                 font-size: 1.5rem;
             }
         }
+        /* 4to hijo */
+        .inicio__enlaces{
+            margin-top: 3rem;
+        }
     }
 }
+
+/* Desktop*/
+@media only screen and (min-width: 992px){
+    .inicio{
+        /* 1er hijo */
+        .inicio__background{
+            .background__titulo{
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+

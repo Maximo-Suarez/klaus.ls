@@ -92,7 +92,8 @@ body {
   overflow-x: hidden;
   /* 1er hijo */
   /* 2do hijo */
-  /* 3er hijo */ }
+  /* 3er hijo */
+  /* 4to hijo */ }
   .inicio .inicio__background {
     width: 100vw;
     height: 50vh;
@@ -151,44 +152,83 @@ body {
       margin: 0 1rem;
       padding: 0 1rem;
       border-left: solid 1px #0055ff; }
+  .inicio .inicio__enlaces {
+    padding-bottom: 3rem;
+    margin-top: 1rem; }
+    .inicio .inicio__enlaces .enlaces__enlace {
+      background-color: #0055ff;
+      position: relative;
+      padding: 0;
+      margin-bottom: 2rem !important;
+      border-radius: .2rem;
+      box-shadow: 0.1rem 0.1rem 1.5rem #adadad; }
+      .inicio .inicio__enlaces .enlaces__enlace .enlace__ancor .ancor__img {
+        opacity: .5; }
+      .inicio .inicio__enlaces .enlaces__enlace .enlace__ancor .ancor__texto {
+        position: absolute;
+        z-index: 100;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        color: #fff !important;
+        left: 50%;
+        top: 25%;
+        font-weight: 900;
+        letter-spacing: .3rem; }
 
-/* tablet y desktop */
+/* tablet */
 @media only screen and (min-width: 768px) {
-  .inicio .inicio__background {
-    height: 18rem;
-    background-image: linear-gradient(90deg, #0339a4 0%, #0055ff 35%, #00cbd7 100%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: nowrap; }
-    .inicio .inicio__background .background__logo {
-      height: 5rem;
-      width: 10.8rem; }
-      .inicio .inicio__background .background__logo .logo__img {
-        width: 100%; }
-      .inicio .inicio__background .background__logo .background__titulo {
-        font-size: 2.5rem; }
-  .inicio .inicio__introduccion {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "hola hola" "icono texto" "icono texto";
-    grid-template-columns: 12rem auto; }
-    .inicio .inicio__introduccion .introduccion__subtitulo {
-      font-size: 2rem; }
-    .inicio .inicio__introduccion .introduccion__texto {
-      font-size: 1.5rem; }
-    .inicio .inicio__introduccion .introduccion__icono {
-      margin: 0 2rem; }
-  .inicio .inicio__bienvenidos {
-    width: 90vw;
-    flex-direction: row; }
-    .inicio .inicio__bienvenidos .bienvenidos__subtitulo {
-      font-size: 1.5rem;
-      text-align: center; }
-    .inicio .inicio__bienvenidos .bienvenidos__texto {
-      padding: 2rem;
-      font-size: 1.5rem; } }
+  .inicio {
+    /* 1er hijo */
+    /* 2do hijo */
+    /* 3er hijo */
+    /* 4to hijo */ }
+    .inicio .inicio__background {
+      height: 75vh;
+      background-image: linear-gradient(90deg, #0339a4 0%, #0055ff 35%, #00cbd7 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-wrap: nowrap; }
+      .inicio .inicio__background .background__titulo {
+        font-size: 3rem;
+        padding-left: 2rem;
+        width: 75%; }
+      .inicio .inicio__background .background__logo {
+        height: 5rem;
+        width: 10.8rem;
+        margin-left: 2rem; }
+        .inicio .inicio__background .background__logo .logo__img {
+          width: 100%; }
+    .inicio .inicio__introduccion {
+      width: 100%;
+      display: grid;
+      grid-template-areas: "hola hola" "icono texto" "icono texto";
+      grid-template-columns: 12rem auto; }
+      .inicio .inicio__introduccion .introduccion__subtitulo {
+        font-size: 2rem; }
+      .inicio .inicio__introduccion .introduccion__texto {
+        font-size: 1.5rem; }
+      .inicio .inicio__introduccion .introduccion__icono {
+        margin: 0 2rem; }
+    .inicio .inicio__bienvenidos {
+      width: 90vw;
+      flex-direction: row; }
+      .inicio .inicio__bienvenidos .bienvenidos__subtitulo {
+        font-size: 1.5rem;
+        text-align: center; }
+      .inicio .inicio__bienvenidos .bienvenidos__texto {
+        padding: 2rem;
+        font-size: 1.5rem; }
+    .inicio .inicio__enlaces {
+      margin-top: 3rem; } }
+
+/* Desktop*/
+@media only screen and (min-width: 992px) {
+  .inicio {
+    /* 1er hijo */ }
+    .inicio .inicio__background .background__titulo {
+      font-size: 3.5rem; } }
 
 .novedades .novedades__titulo {
   font-size: 3rem; }
@@ -415,7 +455,7 @@ body {
         height: 384px; } }
 
 /* Laptop*/
-@media only screen and (min-width: 988px) {
+@media only screen and (min-width: 992px) {
   .htp {
     grid-template-columns: 1fr 1fr 300px; }
     .htp .htp__celular .celular__img {
