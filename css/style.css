@@ -2,7 +2,7 @@
 /* extend */
 .productos .productos__categorias .categorias__categoria .categoria__subtitulo {
   background-image: linear-gradient(90deg, #0046d3 0%, #0055ff 35%, #00cbd7 100%);
-  color: #fff !important;
+  color: #fff;
   padding: 1rem; }
 
 /* mixin */
@@ -61,7 +61,7 @@ body {
         .header .header__nav .nav__contenedor .contenedor__logo .logo__img {
           width: 100%; }
       .header .header__nav .nav__contenedor .contenedor__links .links__ul .ul__li a {
-        color: #fff !important;
+        color: #fff;
         font-size: 1.3rem; }
 
 @media only screen and (min-width: 992px) {
@@ -89,13 +89,13 @@ body {
   justify-content: space-evenly;
   align-items: center; }
   .footer a {
-    color: #fff !important; }
+    color: #fff; }
   .footer .footer__subtitulo {
     font-size: 1.2rem;
     margin: .5rem 0;
     padding: .5rem 0;
-    border-bottom: solid 1px #fff !important;
-    color: #fff !important; }
+    border-bottom: solid 1px #fff;
+    color: #fff; }
   .footer .footer__seguinos {
     width: 65%;
     display: flex;
@@ -104,7 +104,7 @@ body {
     align-items: center;
     flex-wrap: nowrap; }
     .footer .footer__seguinos .seguinos__subtitulo {
-      color: #fff !important; }
+      color: #fff; }
     .footer .footer__seguinos .seguinos__icon {
       font-size: 2rem; }
 
@@ -135,7 +135,7 @@ body {
       width: 100%;
       font-size: 2.1rem;
       padding: 1rem;
-      color: #fff !important; }
+      color: #fff; }
     .inicio .inicio__background .background__logo {
       height: 3rem;
       width: 6.8rem;
@@ -185,7 +185,7 @@ body {
       background-color: #0055ff;
       position: relative;
       padding: 0;
-      margin-bottom: 2rem !important;
+      margin: 0 auto 2rem auto;
       border-radius: .2rem;
       box-shadow: 0.1rem 0.1rem 1.5rem #adadad; }
       .inicio .inicio__enlaces .enlaces__enlace .enlace__ancor .ancor__img {
@@ -195,7 +195,7 @@ body {
         z-index: 100;
         transform: translate(-50%, -50%);
         font-size: 2rem;
-        color: #fff !important;
+        color: #fff;
         left: 50%;
         top: 25%;
         font-weight: 900;
@@ -324,10 +324,10 @@ body {
   .productos .productos__categorias .categorias__categoria .categoria__subtitulo {
     text-align: center;
     margin: auto 0;
-    border-color: #fff !important;
+    border-color: #fff;
     box-shadow: 0.1rem 0.1rem 1rem #adadad; }
   .productos .productos__categorias .categorias__categoria .categoria__galeria {
-    margin: .5rem auto 2rem auto !important; }
+    margin: .5rem auto 2rem auto; }
     .productos .productos__categorias .categorias__categoria .categoria__galeria .galeria__img {
       margin: 1rem auto;
       box-shadow: 0.1rem 0.1rem 1rem #adadad; }
@@ -374,18 +374,18 @@ body {
     flex-wrap: nowrap; }
     .htp .htp__SeguiLosPasos .SeguiLosPasos__subtitulo {
       text-align: center;
-      border: solid 0.1rem #fff !important;
-      box-shadow: 0.2rem 0.2rem 1rem #fff !important;
+      border: solid 0.1rem #fff;
+      box-shadow: 0.2rem 0.2rem 1rem #fff;
       padding: 0 1rem;
       width: 80%;
-      color: #fff !important;
+      color: #fff;
       font-size: 1.3rem; }
     .htp .htp__SeguiLosPasos .SeguiLosPasos__texto {
       font-size: 1.3rem;
       padding: 0 1rem;
-      border: solid 0.1rem #fff !important;
-      box-shadow: 0.2rem 0.2rem 1rem #fff !important;
-      color: #fff !important; }
+      border: solid 0.1rem #fff;
+      box-shadow: 0.2rem 0.2rem 1rem #fff;
+      color: #fff; }
     .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos {
       display: flex;
       flex-direction: column;
@@ -403,9 +403,9 @@ body {
         margin: 1rem; }
         .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos .paso__1 .paso__p, .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos .paso__2 .paso__p, .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos .paso__3 .paso__p {
           text-align: center;
-          color: #fff !important; }
+          color: #fff; }
           .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos .paso__1 .paso__p a, .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos .paso__2 .paso__p a, .htp .htp__SeguiLosPasos .SeguiLosPasos__contenedor .contenedor__pasos .paso__3 .paso__p a {
-            color: #fff !important; }
+            color: #fff; }
   .htp .htp__lugares {
     height: 30%;
     display: flex;
@@ -460,7 +460,7 @@ body {
           text-align: start;
           padding: 0 0 0 1rem;
           margin-left: 1rem;
-          border-left: solid 0.1rem #fff !important; }
+          border-left: solid 0.1rem #fff; }
     .htp .htp__lugares {
       grid-area: lugares;
       height: 20rem;
@@ -516,13 +516,13 @@ body {
     box-shadow: 0.1rem 0.1rem 1rem #adadad; }
     .contactanos .contactanos__aclaracion .aclaracion__subtitulo {
       width: 50%;
-      color: #fff !important;
+      color: #fff;
       box-shadow: 0.2rem 0.2rem 1rem rgba(255, 255, 255, 0.466);
-      border: solid 0.1rem #fff !important;
+      border: solid 0.1rem #fff;
       text-align: center; }
     .contactanos .contactanos__aclaracion .aclaracion__texto2 {
-      color: #fff !important;
-      border-left: solid 0.1rem #fff !important;
+      color: #fff;
+      border-left: solid 0.1rem #fff;
       padding-left: 1rem;
       margin-left: 1rem; }
   .contactanos .contactanos__opciones {
@@ -546,7 +546,7 @@ body {
         margin-left: .5rem;
         text-decoration: none;
         text-align: center;
-        color: #fff !important;
+        color: #fff;
         width: 6rem;
         background-image: linear-gradient(90deg, #0046d3 0%, #0055ff 35%, #00cbd7 100%);
         border-radius: .3rem; }
@@ -559,27 +559,22 @@ body {
       box-shadow: 0.1rem 0.1rem 2rem #cfcfcf; }
       .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__subtitulo {
         text-align: center; }
-      .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input1:focus {
-        box-shadow: 0.1rem 0.1rem 1rem #76a4ff;
-        border: #0055ff solid 0.1rem;
-        outline: none; }
-      .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input2:focus {
-        box-shadow: 0.1rem 0.1rem 1rem #76a4ff;
-        border: #0055ff solid 0.1rem;
-        outline: none; }
-      .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input3 {
-        background: #fff !important;
-        border: 0.1rem #0055ff solid;
-        border-radius: .2rem;
-        padding: .2rem 1rem; }
-        .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input3:focus {
+      .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input {
+        font-size: 1.3rem;
+        color: #0055ff; }
+        .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input:focus {
           box-shadow: 0.1rem 0.1rem 1rem #76a4ff;
           border: #0055ff solid 0.1rem;
           outline: none; }
+      .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input3 {
+        background-color: #fff;
+        border: 0.1rem #0055ff solid;
+        border-radius: .2rem;
+        padding: .2rem 1rem; }
       .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input4 {
-        color: #fff !important;
+        color: #fff;
         background-image: linear-gradient(90deg, #0046d3 0%, #0055ff 35%, #00cbd7 100%);
-        border: solid 0.1rem #fff !important;
+        border: solid 0.1rem #fff;
         border-radius: .2rem;
         padding: .2rem 1rem; }
         .contactanos .contactanos__opciones .opciones__formulario .formulario__contenedor .contenedor__form .form__input4:focus {

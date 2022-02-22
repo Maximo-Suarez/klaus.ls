@@ -59,30 +59,20 @@
                     text-align: center;
                 }
                 .contenedor__form{
-                    .form__input1{
+                    .form__input{
+                        font-size: 1.3rem; 
+                        color: $color-primario;
                         &:focus{
                             box-shadow: .1rem .1rem 1rem rgb(118, 164, 255);
                             border: $color-primario solid .1rem;
-                            outline: none;                    
-                        }
-                    }
-                    .form__input2{
-                        &:focus{
-                            box-shadow: .1rem .1rem 1rem rgb(118, 164, 255);
-                            border: $color-primario solid .1rem;
-                            outline: none;                    
+                            outline: none; 
                         }
                     }
                     .form__input3{
-                        background: $color-secundario;
+                        background-color: $color-secundario;
                         border: .1rem $color-primario solid;
                         border-radius: .2rem;
                         padding: .2rem 1rem;
-                        &:focus{
-                            box-shadow: .1rem .1rem 1rem rgb(118, 164, 255);
-                            border: $color-primario solid .1rem;
-                            outline: none;                    
-                        }
                     }
                     .form__input4{
                         color: $color-secundario;

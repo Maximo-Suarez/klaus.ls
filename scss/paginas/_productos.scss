@@ -21,7 +21,7 @@
                 @extend %cartel
             }
             .categoria__galeria{
-                margin: .5rem auto 2rem auto !important;
+                margin: .5rem auto 2rem auto;
                 .galeria__img{
                     margin: 1rem auto;
                     box-shadow: map-get($shadow, chica);
