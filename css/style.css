@@ -354,6 +354,17 @@ body {
         .productos .productos__categorias .categorias__categoria .categoria__galeria .galeria__subtitulo {
           font-size: 1.4rem; } }
 
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  .galeria__img {
+    transition: all 1s; }
+    .galeria__img:hover {
+      transform: scale(1.6, 1.6);
+      z-index: 100;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4); } }
+
 .htp {
   height: 70rem;
   /* 1er hijo */

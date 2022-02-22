@@ -63,3 +63,18 @@
         }
     }
 }
+
+/* Desktop */
+
+@media only screen and (min-width: 992px) {
+    .galeria__img {
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.6, 1.6);
+            z-index: 100;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+        } 
+    }
+}
