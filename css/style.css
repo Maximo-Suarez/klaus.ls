@@ -401,7 +401,8 @@ body {
       margin: 1rem auto;
       box-shadow: 0.1rem 0.1rem 1rem #adadad; }
     .productos .productos__categorias .categorias__categoria .categoria__galeria .galeria__subtitulo {
-      font-size: 1rem; }
+      font-size: 1.5rem;
+      font-weight: 700; }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
