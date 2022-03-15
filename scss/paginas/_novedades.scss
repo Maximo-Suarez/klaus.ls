@@ -1,41 +1,77 @@
 .novedades{
-    .novedades__titulo{
-        font-size: 3rem;
+    overflow-x: hidden;
+    /* 2do hijo */
+    .novedades__loNuevo{
+        .loNuevo__subtitulo{
+            text-align: center;
+        }
+        .loNuevo__articulo{
+            background-image: map-get($gradiantes, mobile);
+            box-shadow: map-get($shadow, mediana);
+            margin: 5rem 0;
+            .articulo__subtitulo{
+                color: $color-secundario;
+                padding: .8rem .5rem;
+                position: relative;
+                top: 1.8rem;
+                left: 50%;
+                transform: translateX(-50%);
+                box-shadow: 0 0 1rem $color-secundario;
+                border-radius: .5rem;
+                width: 8rem;
+                text-align: center;
+            }
+            .articulo__contenedor{
+                padding: 3rem 0;
+                border-radius: .3rem;
+                .contenedor__contenedorImg{
+                    .contenedorImg__img{
+                        width: 100%;
+                        border-radius: .3rem;
+                        box-shadow: .1rem .1rem 2rem #0277ef;
+                    }
+                }
+                .contenedor__caracteristicas{
+                    padding-left: 1rem;
+                    margin-top: 1rem !important;
+                    border-left: .1rem solid $color-secundario;
+                    .caracteristicas__subtitulo{
+                        color: $color-secundario;
+                        font-size: 1.5rem;
+                    }
+                    .caracteristicas__texto{
+                        color: $color-secundario;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
     }
-    .novedades__carrusel{
-        background-image: linear-gradient(90deg, rgb(0, 70, 211) 0%, rgba(0,85,255,1) 35%, rgb(1, 194, 204) 100%);
-        box-shadow: map-get($shadow, grande);
-        margin-top: 1rem;
-        height: 37.5rem;
-        display: flex;
-        align-items: center;
-    }
-    .novedades__texto{
-        width: 17rem;
+    /* 3er hijo */
+    .novedades__aclaracion{
         text-align: end;
-        padding: .2rem .8rem .2rem 0;
+        margin-bottom: 5rem;
         margin-right: 1rem;
-        border-right: solid #05f 1px;
-        align-self: flex-end;
-        margin-bottom: 1rem;
-        margin-top: 2rem;
-        .texto__subtitulo{
+        padding-right: 1rem;
+        border-right: .1rem solid $color-primario;
+        .aclaracion__subtitulo{
             font-size: 1.5rem;
         }
-        .texto__nov{
-            font-size: 1.2rem;
+        .aclaracion__texto{
+            font-size: 1.3rem;
         }
-        & i{
-            font-size: 1.9rem;
-            transform: translate(100%,-50%);
+        .aclaracion__icon{
             color: $color-primario;
+            font-size: 2rem;
+            position: relative;
+            left: 1.9rem;
+            bottom: 1rem;
         }
     }
 }
 
 @media only screen and (min-width: 768px){
     .novedades{
-        height: 50rem;
         /* 1er hijo */
         .novedades__titulo{
             width: 50%;
@@ -43,24 +79,92 @@
             border: .1rem #05f solid;
         }
         /* 2do hijo */
-        .novedades__carrusel{
-            width: 100% !important;
-        }
-        .carrusel__bootstrap{
-            width: 75% !important;
-            height: 80% !important;
-            margin: auto;
-            box-shadow: .2rem .2rem 1.5rem rgb(47, 53, 65);
-            .carrusel__img{
-                height: 26rem;
-                width: 25rem;
+        .novedades__loNuevo{
+            .loNuevo__subtitulo{
+                font-size: 2rem;
+            }
+            .loNuevo__articulo{
+                .articulo__subtitulo{
+                    left: 15%;
+                }
+                .articulo__contenedor{
+                    .contenedor__contenedorImg{
+                        .contenedorImg__img{
+                            box-shadow: 0.1rem 0.1rem 2rem #0046d4;
+                        }
+                    }
+                    .contenedor__caracteristicas{
+                        position: relative;
+                        padding: 1rem;
+                        margin: 0 auto !important;
+                        border: .1rem solid $color-secundario;
+                        .caracteristicas__subtitulo{
+                            position: absolute;
+                            top: 10%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 2rem;
+                            font-weight: 700;
+                        }
+                        .caracteristicas__texto{
+                            text-align: center;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            padding: 1rem;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
             }
         }
-        /* 3er hijo */
-        .novedades__texto{
-            width: 80%;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px){
+    .novedades{
+        /* 2do hijo */
+        .novedades__loNuevo{
+            .loNuevo__articulo{
+                margin: 5rem auto;
+                .articulo__subtitulo{
+                    width: 11rem;
+                }
+                .articulo__contenedor{
+                    .contenedor__contenedorImg{
+                        .contenedorImg__img{
+                            box-shadow: 0.1rem 0.1rem 2rem #0046d4;
+                        }
+                    }
+                    .contenedor__caracteristicas{
+                        position: relative;
+                        padding: 1rem;
+                        margin: 0 auto !important;
+                        border: .1rem solid $color-secundario;    
+                        .caracteristicas__subtitulo{
+                            position: absolute;
+                            top: 10%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 100%;
+                            text-align: start;
+                            font-size: 3rem;
+                            padding: 1rem;
+                            font-weight: 700;
+                        }
+                        .caracteristicas__texto{
+                            text-align: start;
+                            width: 70%;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            padding: 1rem;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
         }
     }
 }
